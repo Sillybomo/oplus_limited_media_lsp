@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bomo.oplusmedialimited"
+    android:versionCode="31"
+    android:versionName="0.31">
+
+    <application
+        android:label="照片有限访问全开"
+        android:allowBackup="false">
+        <activity
+            android:name=".StatusActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="xposedmodule" android:value="true" />
+        <meta-data android:name="xposeddescription" android:value="ColorOS 照片/视频权限对全部应用开放「允许有限访问」" />
+        <meta-data android:name="xposedminversion" android:value="93" />
+        <meta-data android:name="xposedscope" android:resource="@array/xposed_scope" />
+    </application>
+</manifest>

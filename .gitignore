@@ -1,0 +1,28 @@
+# 构建产物
+module/build/
+module/dexout/
+module/obj/
+module/*.apk
+module/*.idsig
+*.log
+
+# 设备配置备份（含机型/模块状态，不入库）
+*.db
+
+# 签名（发布脱敏，绝不入库）
+*.keystore
+*.jks
+keystore/
+
+# 反编译参照的 OEM 系统 APK 与反编译源码（第三方版权，不随仓库分发）
+apk/
+
+# IDE / 系统
+.idea/
+*.iml
+.gradle
+.DS_Store
+
+# 技术沉淀笔记 / 交接文档（含设备序列号、私人信息，绝不入库）
+notes/
+*.docx
